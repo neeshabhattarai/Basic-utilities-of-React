@@ -1,0 +1,8 @@
+name: First Learning
+on: workflow_dispatch
+jobs:
+    test-job:
+        runs-on: windows-latest
+        steps:
+            - name: Setup-Nodejs
+            - uses: actions/setup-node@v3
