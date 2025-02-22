@@ -1,0 +1,8 @@
+name: React Project
+on: create
+jobs: 
+  test:
+   runs-on: windows-latest
+   steps:
+    - name: "Created a new file"
+      run: echo "New file is created"
