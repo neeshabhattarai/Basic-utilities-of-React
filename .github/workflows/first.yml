@@ -5,4 +5,6 @@ jobs:
         runs-on: windows-latest
         steps:
             - name: Setup-Nodejs
+              run: echo "runned successfully"
             - uses: actions/setup-node@v3
+                
