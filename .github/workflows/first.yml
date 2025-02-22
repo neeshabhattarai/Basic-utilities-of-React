@@ -4,10 +4,10 @@ jobs:
     test-job:
         runs-on: windows-latest
         steps:
-            - name: Setup Nodejs
+            - name: Setup Node
               uses: actions/setup-node@v3
               with:
-                node-version: 18
+                    node-version: 18
             - name: Run this command
               run: echo "runned successfully"
                 
