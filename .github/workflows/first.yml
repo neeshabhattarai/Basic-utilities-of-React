@@ -6,3 +6,8 @@ jobs:
         steps:
             - name: Setup-Nodejs
             - uses: actions/setup-node@v3
+              with:
+                node-version: 18
+            - name: Run this command
+              run: echo "runned successfully"
+                
