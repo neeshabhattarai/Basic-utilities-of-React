@@ -4,7 +4,7 @@ jobs:
     test-job:
         runs-on: windows-latest
         steps:
-            - name: Setup-Nodejs
+            - name: Setup Nodejs
             - uses: actions/setup-node@v3
               with:
                 node-version: 18
