@@ -1,8 +1,12 @@
 name: React Project
-on: create
+on: push
 jobs: 
   test:
    runs-on: windows-latest
    steps:
     - name: "Created a new file"
       run: echo "New file is created"
+    - name: Install Dependies
+      run: npm ci 
+    - name: Install test
+      run: npm test
