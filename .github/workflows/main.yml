@@ -4,6 +4,8 @@ jobs:
   test:
    runs-on: windows-latest
    steps:
+    - name: checkout the file
+      uses: actions/checkout@v3
     - name: "Created a new file"
       run: echo "New file is created"
     - name: Install Dependies
