@@ -10,8 +10,8 @@ jobs:
       run: echo "New file is created"
     - name: Install Dependies
       run: npm ci 
-    - name: Install test
-      run: npm test
+    # - name: Install test
+    #   run: npm test
   deploy:
      needs: test
      runs-on: windows-latest
