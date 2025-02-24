@@ -1,5 +1,5 @@
 name: React Project
-on: push
+on: [push,workflow_dispatch]
 jobs: 
   test:
    runs-on: windows-latest
@@ -12,3 +12,9 @@ jobs:
       run: npm ci 
     - name: Install test
       run: npm test
+  deploy:
+     needs: test
+     runs-on: windows-latest
+     steps:
+      - name: Testing insure
+        run: echo "Runned Successfully"
