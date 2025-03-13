@@ -2,8 +2,8 @@ name: learning-Basic
 on: workflow_dispatch
 jobs:
   test:
-   runs-on: window-latest
-   -steps:
+   runs-on: windows-latest
+   steps:
      - name: Output Github
        run: echo "{{ toJSON(github) }}"
   something:
