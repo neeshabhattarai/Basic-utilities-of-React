@@ -5,5 +5,12 @@ jobs:
    runs-on: window-latest
    -steps:
      - name: Output Github
-       run: echo "{{ toJSON(github)}}"
+       run: echo "{{ toJSON(github) }}"
+  something:
+    needs: test
+    runs-on: windows-latest
+    steps:
+      - name: SOmething
+        run: echo "Hello" 
+
   
