@@ -13,5 +13,6 @@ jobs:
       - name: SOmething
         run: echo "Hello" 
       - name: Hello
+        run: echo "Hii"
 
   
