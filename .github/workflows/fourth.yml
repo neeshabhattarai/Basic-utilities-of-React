@@ -1,0 +1,8 @@
+name: Testing 
+on: push
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+     - name: only checking 
+       run: echo "Checking done"
