@@ -4,6 +4,8 @@ jobs:
   test:
     runs-on: windows-latest
     steps:
+      - name: Checkout
+        uses: checkout@v3
       - name: Install dependies
         run: npm ci
       - name: Hello 
