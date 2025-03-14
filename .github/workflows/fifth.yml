@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependies
-        run: npm run ci
+        run: npm run i
       - name: Hello 
         run: npm run dev
       - name: lint
