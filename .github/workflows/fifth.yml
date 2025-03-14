@@ -1,0 +1,14 @@
+name: Task
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependies
+        run: npm ci
+      - name: Hello 
+        run: npm run dev
+      - name: lint
+        run: npm run build
+      - name: Test
+        run: npm run test
