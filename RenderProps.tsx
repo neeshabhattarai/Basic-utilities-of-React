@@ -1,5 +1,3 @@
-import { JSX } from "react";
-
 const items = [
     { id: 1, title: "CEO", name: "John Doe" },
     { id: 2, title: "Manager", name: "Jane Smith" },
